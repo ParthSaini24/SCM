@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume Builder Page">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="resume.css">
+
+<body>
+    <div class="form-container">
+        <h2>Fill in Your Information for building your own personal resume!</h2>
+        <div class="inputcontent">
+            <form id="resumeForm">
+                <div class="left"><label for="name">Full Name:</label>
+                    <input type="text" id="name" style="width: 500px;"  placeholder="Enter your name" required><br>
+
+                    <label for="emailInput">Email:</label>
+                    <input type="email" id="emailInput" style="width: 500px;"  placeholder="Enter your email" required><br>
+
+                    <label for="phoneInput">Phone:</label>
+                    <input type="text" id="phoneInput" style="width: 500px;"  placeholder="Enter your phone number" required><br>
+
+                    <label for="linkedinInput">LinkedIn URL:</label>
+                    <input type="url" id="linkedinInput" style="width: 500px;"  placeholder="Enter your LinkedIn URL" required><br>
+
+                    <label for="portfolioInput">Portfolio URL:</label>
+                    <input type="url" id="portfolioInput" style="width: 500px;" placeholder="Enter your Portfolio URL" required><br>
+                    <label for="Uploadpic">Upload profile picture:</label><br>
+                    <input style="border-radius: 0px;" type="file" id="myFile" name="filename"><br>
+
+                </div>
+                <div class="right">
+                    <label for="aboutMeInput">About Me:</label>
+                    <textarea style="width: 500px;" id="aboutMeInput" placeholder="Tell us about yourself" required></textarea><br>
+                   <label for="educationInput">Education:</label>
+                    <textarea id="educationInput" style="width: 500px;" placeholder="Enter your education details" required></textarea><br>
+
+
+                    <label for="workInput">Work Experience:</label>
+                    <textarea id="workInput" style="width: 500px;"  placeholder="Enter your work experience" required></textarea><br>
+
+                    <label for="skillsInput">Skills:</label>
+                    <textarea id="skillsInput" style="width: 500px;" placeholder="Enter your skills" required></textarea><br>
+
+                    <label for="projectInput">Projects:</label>
+                    <textarea id="projectInput" style="width: 500px; ;" placeholder="Enter your projects" required></textarea><br>
+
+                    <label for="personalDetailsInput">Personal Details:</label>
+                    <textarea id="personalDetailsInput" style="width: 500px;"  placeholder="Enter your personal details" required></textarea><br>
+                </div>
+                <button type="submit" class="submit">Generate Resume</button>
+            </form>
+        </div>
+        <h2>Sample design of your personal resume </h2>
+    </div>
+    <div class="container">
+        
+        <header>
+            <div class="profile-pic">
+                <img id="profilePic" src="images.jpg" alt="Profile Picture">
+            </div>
+            <h1 id="resumeName">NAME</h1>
+            <a id="email" href="#">emailname@gmail.com</a>
+            <p id="phone">PHONE-NUMBER</p>
+            <p>
+                <a href="#" id="linkedinLink">LinkedIn</a> |
+                <a href="#" id="portfolioLink">Portfolio</a>
+            </p>
+        </header>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p id="aboutMe">Passionate coder with strong skills in HTML and CSS, seeking a position to apply my technical abilities.</p>
+        </section>
+
+        <section class="content-section">
+            <div class="content-box">
+                <h2>Education</h2>
+                <div id="educationContent" class="education-item">
+                    <h3>B.E. in CSE (Computer Science Engineering)</h3>
+                    <p>Chitkara University, Expected Graduation: 2028</p>
+                </div>
+            </div>
+            <div class="content-box">
+                <h2>Work Experience</h2>
+                <div id="workExperienceContent" class="work-item">
+                    <h3>Freelance Web Developer</h3>
+                    <p>Self-employed, January 2020 – Present</p>
+                    <ul>
+                        <li>Developed and designed custom websites for various clients.</li>
+                        <li>Provided ongoing support and maintenance for client websites.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <p id="technicalSkills"><strong>Technical Skills:</strong> Programming Languages, Web Development</p>
+            <p id="softSkills"><strong>Soft Skills:</strong> Leadership, Teamwork, Problem-Solving</p>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div id="projectContent" class="project-item">
+                <h3>Portfolio Website</h3>
+                <p>Designed and developed a personal portfolio website to showcase various projects.</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS</p>
+                <p><strong>Role:</strong> Developer</p>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <h2>Personal Details</h2>
+            <ul id="personalDetailsList">
+                <li>Name: NAME IN CAPITAL LETTERS</li>
+                <li>Father's Name: FATHER NAME IN CAPITAL LETTERS</li>
+                <li>D.O.B: DD/MM/YYYY</li>
+                <li>Nationality: Indian</li>
+                <li>Marital Status: Single</li>
+                <li>Languages Known: English, Hindi, Punjabi</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>References can be provided upon request. Please contact me if you need any additional information.</p>
+        </footer>
+    </div>
+    <center><button class="submitd" id="downloadPdfBtn">Download as PDF</button></center>
+    
+
+    <script src="resume.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+
+</html>
+
+
