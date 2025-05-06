@@ -144,7 +144,7 @@ header {
 
 .content-box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(2, 255, 234, 0.5);
+    box-shadow: 0 15px 30px rgba(2, 250, 234, 0.5);
 }
 
 footer {
